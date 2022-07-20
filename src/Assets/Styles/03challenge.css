@@ -1,0 +1,51 @@
+.mainContent {
+  max-width: 460px;
+}
+
+.NavContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #1f1d26;
+}
+
+.NavigationBar {
+  display: flex;
+}
+
+.ReactIcon {
+  height: 60px;
+}
+
+.NavContainer > .NavigationBar > h3 {
+  color: #7acce7;
+}
+
+.NavContainer > h4 {
+  color: white;
+}
+
+article {
+  padding: 10px;
+  background-color: #24262e;
+  background-image: url(../Images/Frame\ 1.svg);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: center;
+}
+
+article > h1 {
+  color: white;
+  padding: 20px;
+  font-size: 40px;
+}
+
+li {
+  color: #61dbfb;
+  padding-bottom: 10px;
+}
+
+span {
+  color: white;
+  letter-spacing: -0.05em;
+}

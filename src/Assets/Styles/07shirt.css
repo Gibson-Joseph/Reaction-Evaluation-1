@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 250px;
+}
+
+.rating {
+  display: flex;
+  /* flex-wrap: nowrap; */
+}
+
+.star-icon {
+  height: 20px;
+}
+
+.shirt {
+  height: 80%;
+}
+
+.container {
+  width: 150px;
+  margin-left: 10px;
+  /* box-shadow: 2px 8px 15px #888888; */
+  height: 200px;
+  position: relative;
+}
+.content {
+  margin-left: 10px;
+}
+h4 {
+  margin-top: 10px;
+}
+.price {
+  margin-top: 10px;
+}
+.star-icon {
+  margin-right: 5px;
+}
+.soldOut--Badge {
+  position: absolute;
+  top: 20px;
+  margin-left: 15px;
+  background-color: rgb(243, 239, 213);
+  border-radius: 5px;
+}

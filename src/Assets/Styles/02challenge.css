@@ -1,0 +1,32 @@
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  border-bottom: 5px solid rgb(198, 190, 190);
+}
+
+.nav-logo {
+  width: 60px;
+}
+
+.list {
+  display: flex;
+  list-style: none;
+}
+
+.list > li {
+  padding: 10px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  color: white;
+  background-color: gray;
+  height: 50px;
+}
+
+.container {
+  margin: 40px 25% 40px 25%;
+  border: 2px solid gray;
+}

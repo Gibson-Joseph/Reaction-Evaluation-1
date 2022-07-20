@@ -1,46 +1,92 @@
-# Getting Started with Create React App
+# React First Evaluation:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 1. What is React?
 
-## Available Scripts
+React is a JavaScript Library for bulding user interface.  
+it's not a framwork.
 
-In the project directory, you can run:
+## 2. What are the major features of React?
 
-### `npm start`
+- JSX
+- Virtual Dom
+- Components
+- Performance
+- Reausable code
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 3.What is JSX?
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- JavaScript XML (JSX) —> Extension to the JavaScript language syntax.
+- JSX allows us to write HTML in React.
+- JSX converts HTML tags into react elements.
+- JSX converts HTML tags into react elements.
+- JSX ultimately transpires to pure javascript which is understood by the browser.
+- JSX makes your code simpler and more elegant.
 
-### `npm test`
+## 4.What is the difference between Element and Component?
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Element:
 
-### `npm run build`
+It is the basic building block in a react application, it is an object representation of a virtual DOM node.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Component:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+In react a component represent a part of the user interface.  
+Component code is usually placed in a javascript file.  
+Componebts are reusable codes.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Component Type:
 
-### `npm run eject`
+- Function Component.
+- Class Component.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Function Component:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Function components are literally javascript functions that return HTML which describes the UI.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Class Component:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- A class component muust include the extends react.component statement.
+- The component also required render method.
+- The render method returns the HTML element.
 
-## Learn More
+## 5.How to create components in React?
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+create a new file with FileName.js file extension and put the code inside it: Note that the filename must start with an uppercase character.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 6.What are props in React?
+
+“Props” refers to the properties being passed into a component in order for it to work correctly, similar to how a function receives parameters. A component receiving props is not allowed to modify those props. They are “immutable”
+
+## 7.What is the difference between state and props?
+
+### Props:
+
+- Props are immutable.
+- Props allow you to pass data from one component to another component as an argument.
+- Props make component reusable.
+
+### State:
+
+- State mutable.
+- State holdes information about the component. cannot access outside of the components.
+- State can not make component reusable.
+
+## 8.What is Virtual DOM?
+
+- DOM stands for Document Object Model.
+- In simple words, virtual DOM is just a copy of the original DOM kept in the memory and synced with the real DOM by libraries such as ReactDOM.
+
+## 9.How Virtual DOM works?
+
+When anything new is added to the application, a virtual DOM is created and it is represented as a tree. Each element in the application is a node in this tree. So, whenever there is a change in the state of any element, a new Virtual DOM tree is created. This new Virtual DOM tree is then compared with the previous Virtual DOM tree and make a note of the changes. After this, it finds the best possible ways to make these changes to the real DOM. Now only the updated elements will get rendered on the page again.
+
+## 10.What is the difference between Shadow DOM and Virtual DOM?
+
+### Shadow Dom:
+
+- Virtual DOM is creating a copy of the whole DOM object
+- Shadow DOM is a tool used to build component-based apps and websites.
+
+### Virtual Dom:
+
+- Shadow DOM creates small pieces of the DOM object

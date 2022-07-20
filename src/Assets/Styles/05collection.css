@@ -1,0 +1,8 @@
+.itemList {
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 50px;
+  justify-content: space-around;
+  width: 75%;
+  margin-left: 10%;
+}
