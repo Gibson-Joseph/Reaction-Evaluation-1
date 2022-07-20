@@ -3,12 +3,24 @@ import "../Assets/Styles/09meme.css";
 import memesData from "../Components/16MemeData";
 
 export default function MemeInput() {
-  const [isImage, setIsImage]: any = useState();
+  // console.log(memesData);
+
+  const [meme, setMeme] = useState({
+    topText: "",
+    bottomText: "",
+    randomImage: memesData.data.mames[1].url,
+  });
+  const [isImage, setIsImage]: any = useState(memesData);
   function handleClick() {
-    const memesArray = memesData.data.mames;
+    const memesArray = isImage.data.mames;
     const randomNumber = Math.floor(Math.random() * memesArray.length);
     let imageLink = memesArray[randomNumber].url;
-    setIsImage(imageLink);
+    setMeme({ ...meme, randomImage: imageLink });
+
+    // setMeme((prevMeme) => ({
+    //   ...prevMeme,
+    //   randomImage: imageLink,
+    // }));
   }
 
   return (
@@ -33,7 +45,23 @@ export default function MemeInput() {
           Get a new meme image
         </button>
       </div>
-      <img className="meme--image" src={isImage} alt="" />
+      <img className="meme--image" src={meme.randomImage} alt="" />
     </main>
   );
 }
+
+// import { useState } from "react";
+// import memesData from "../Components/16MemeData";
+// export default function Name() {
+//   const [isData, setIsData]: any = useState(memesData);
+//   function handleClick() {
+//     const arr = isData.data.list[0].firstName;
+//     setIsData(arr);
+//   }
+//   return (
+//     <div>
+//       <h1>{isData}</h1>
+//       <button onClick={handleClick}>click</button>
+//     </div>
+//   );
+// }

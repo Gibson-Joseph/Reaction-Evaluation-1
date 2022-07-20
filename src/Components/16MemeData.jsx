@@ -42,3 +42,18 @@ export default {
     ],
   },
 };
+
+// export default {
+//   data: {
+//     list: [
+//       {
+//         firstName: "Gibson",
+//         lastName: "Joseph",
+//       },
+//       {
+//         firstName: "Java",
+//         lastName: "Script",
+//       },
+//     ],
+//   },
+// };

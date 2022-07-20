@@ -5,6 +5,7 @@ import "../Assets/Styles/star.css";
 export default function Stars() {
   const [isActive, setIsActive] = useState();
   function handleClick(index) {
+    console.log("handle click got called");
     setIsActive(index);
   }
 
