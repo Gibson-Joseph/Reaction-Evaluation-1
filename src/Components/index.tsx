@@ -60,9 +60,9 @@ import Name from "./07name";
 import nameData from "../Components/06namedata";
 
 export default function NameValue() {
-  console.log(nameData);
-  const nameValue = nameData.map((item) => (
-    <Name firstName={item.firstName} lastName={item.lastName} />
+  // console.log(nameData);
+  const nameValue = nameData.map((item, index) => (
+    <Name key={index} firstName={item.firstName} lastName={item.lastName} />
   ));
   return <div>{nameValue}</div>;
 }

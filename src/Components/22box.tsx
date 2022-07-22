@@ -25,7 +25,7 @@
 interface IProp {
   on: boolean;
   click: any;
-  id: number;
+  // id: number;
 }
 
 export default function Box(props: IProp) {
@@ -42,7 +42,8 @@ export default function Box(props: IProp) {
     <div
       style={styles}
       className="box"
-      onClick={() => props.click(props.id)}
+      // onClick={() => props.click(props.id)}
+      onClick={props.click}
     ></div>
   );
 }

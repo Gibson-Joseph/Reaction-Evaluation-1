@@ -23,6 +23,11 @@ export default function MemeInput() {
     // }));
   }
 
+  function handleChange(e: React.ChangeEvent<HTMLInputElement>) {
+    const { name, value } = e.target;
+    setMeme({ ...meme, [name]: value });
+  }
+
   return (
     <main>
       <div className="form">
@@ -30,22 +35,30 @@ export default function MemeInput() {
           className="form--input"
           placeholder="Top Text"
           type="text"
-          name=""
+          name="topText"
+          value={meme.topText}
           id=""
+          onChange={handleChange}
         />
         <input
           className="form--input"
           placeholder="Bottom Text"
           type="text"
-          name=""
+          name="bottomText"
+          value={meme.bottomText}
           id=""
+          onChange={handleChange}
         />
 
         <button onClick={handleClick} className="form--button">
           Get a new meme image
         </button>
       </div>
-      <img className="meme--image" src={meme.randomImage} alt="" />
+      <div>
+        <img className="meme--image" src={meme.randomImage} alt="" />
+        <h3 className="img--h3--1">{meme.topText}</h3> <br />
+        <h3 className="img--h3--2">{meme.bottomText}</h3>
+      </div>
     </main>
   );
 }

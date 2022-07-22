@@ -1,0 +1,22 @@
+.form--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* width: 45%;
+  box-shadow: 10px 10px 10px gray; */
+}
+
+input,
+textarea {
+  border-radius: 5px;
+  text-indent: 5px;
+}
+button {
+  cursor: pointer;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
