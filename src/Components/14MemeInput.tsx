@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../Assets/Styles/09meme.css";
 import memesData from "../Components/16MemeData";
 
@@ -10,6 +10,16 @@ export default function MemeInput() {
     bottomText: "",
     randomImage: memesData.data.mames[1].url,
   });
+  const [allMemes, setAllMemes] = useState();
+
+  // useEffect(() => {
+  //   fetch("https://api.imgflip.com/get.jpg")
+  //     .then((res) => res.json())
+  //     .then((data) => setAllMemes(data.data.mames));
+  // }, []);
+
+  // console.log(allMemes);
+
   const [isImage, setIsImage]: any = useState(memesData);
   function handleClick() {
     const memesArray = isImage.data.mames;
@@ -62,6 +72,8 @@ export default function MemeInput() {
     </main>
   );
 }
+
+///////////////
 
 // import { useState } from "react";
 // import memesData from "../Components/16MemeData";
