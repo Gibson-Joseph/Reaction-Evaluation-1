@@ -1,12 +1,23 @@
+/* body {
+  background-color: #ffffff;
+} */
+
 .mainContent {
   max-width: 460px;
 }
 
-.NavContainer {
+.NavContainer1 {
   display: flex;
   justify-content: space-between;
   padding: 10px;
   background-color: #1f1d26;
+}
+
+.NavContainer2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: white;
 }
 
 .NavigationBar {
@@ -17,15 +28,24 @@
   height: 60px;
 }
 
-.NavContainer > .NavigationBar > h3 {
+.NavigationBar > h3 {
   color: #7acce7;
 }
 
-.NavContainer > h4 {
+.H4-dark {
   color: white;
 }
 
-article {
+.H4-light {
+  color: #1f1d26;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+}
+
+.article1 {
   padding: 10px;
   background-color: #24262e;
   background-image: url(../Images/Frame\ 1.svg);
@@ -33,11 +53,25 @@ article {
   background-position-x: right;
   background-position-y: center;
 }
-
+.article2 {
+  padding: 10px;
+  background-color: white;
+  background-image: url(../Images/Frame\ 1.svg);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: center;
+}
 article > h1 {
-  color: white;
   padding: 20px;
   font-size: 40px;
+}
+
+.h1--dark {
+  color: white;
+}
+
+.h1--light {
+  color: #1f1d26;
 }
 
 li {
@@ -45,7 +79,12 @@ li {
   padding-bottom: 10px;
 }
 
-span {
+.span1 {
   color: white;
+  letter-spacing: -0.05em;
+}
+
+.span2 {
+  color: black;
   letter-spacing: -0.05em;
 }

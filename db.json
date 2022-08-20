@@ -1,0 +1,60 @@
+{
+  "customers": [
+    {
+      "id": 0,
+      "firstname": "Gibson",
+      "lastname": "Joseph",
+      "email": "Gj@xyz.com",
+      "mobile": 98765
+    },
+    {
+      "id": 1,
+      "firstname": "Kl",
+      "lastname": "Rahul",
+      "email": "Klr@xyz.com",
+      "mobile": 12345
+    },
+    {
+      "id": 3,
+      "firstname": "Vijay",
+      "lastname": "B.E",
+      "email": "vijay@xyz.com",
+      "mobile": 12345
+    },
+    {
+      "id": 4,
+      "firstname": "bennison",
+      "lastname": "devadoss",
+      "email": "ben@gmail.com",
+      "mobile": "7904902106"
+    },
+    {
+      "firstname": "Edison",
+      "lastname": "devadoss",
+      "email": "ererer",
+      "mobile": "39393232323232",
+      "id": 5
+    },
+    {
+      "firstname": "kathish",
+      "lastname": "bro",
+      "email": "dfasfsdfs",
+      "mobile": "223232382828",
+      "id": 6
+    },
+    {
+      "firstname": "pradeep",
+      "lastname": "kumar",
+      "email": "gfkj",
+      "mobile": "mjg",
+      "id": 7
+    },
+    {
+      "firstname": "Tharani",
+      "lastname": "Kutty",
+      "email": "kd@gmail",
+      "mobile": "7402645214",
+      "id": 8
+    }
+  ]
+}

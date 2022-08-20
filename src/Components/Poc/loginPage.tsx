@@ -1,5 +1,8 @@
 import React, { useState } from "react";
-import "../Assets/Styles/25simpleForm.css";
+import "../../Assets/Styles/loginPage.css";
+import { BrowserRouter, Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { Password } from "@mui/icons-material";
 
 interface IUser {
   email: string;
@@ -34,6 +37,8 @@ export default function SimpleForm() {
     });
   }
 
+  const navigate = useNavigate();
+
   function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
 
@@ -44,10 +49,14 @@ export default function SimpleForm() {
     console.log(checkPassword);
     let checkComment = userData.isJoin
       ? userData.password === userData.confirmPassword
-        ? "Thanks for signing up for our newsletter!"
+        ? "Thanks for signing up for our  newsletter!" && navigate("/page")
         : ""
       : "";
-    console.log(checkComment);
+
+    // navigate("/page");
+
+    //router.navigate
+    // console.log(checkComment);
   }
 
   console.log("User Data --->", userData);
@@ -80,6 +89,18 @@ export default function SimpleForm() {
           // id=""
           onChange={handleChange}
         />
+        <span className="check">
+          {userData.password !== userData.confirmPassword
+            ? "Password do not namtch"
+            : ""}
+        </span>
+
+        {/* {userData.password !== userData.confirmPassword ? (
+          <span className="check">Password do not namtch</span>
+        ) : (
+          ""
+        )} */}
+
         <label htmlFor="check">
           <input
             type="checkbox"
@@ -91,7 +112,8 @@ export default function SimpleForm() {
           I want to join the <br />
           <span>newsletter</span>
         </label>
-        <button>Sign up</button>
+
+        <button className="signup-btn">Signup</button>
       </form>
     </div>
   );
